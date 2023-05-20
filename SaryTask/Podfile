@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '11.0'
+
+  target 'SaryTask' do
+    use_frameworks!
+    pod ‘RxSwift’
+    pod ‘RxCocoa’
+  target 'SaryTaskTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SaryTaskUITests' do
+    # Pods for testing
+  end
+
+end
