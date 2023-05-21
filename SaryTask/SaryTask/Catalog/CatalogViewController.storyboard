@@ -21,17 +21,25 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pt1-cz-TeW" userLabel="Banner view" customClass="BannerView" customModule="SaryTask" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="180"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="214"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="180" id="PFQ-xw-1Gc"/>
+                                            <constraint firstAttribute="height" constant="214" id="PFQ-xw-1Gc"/>
                                         </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kb3-is-ftg" customClass="CatalogItemsView" customModule="SaryTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="224" width="393" height="535"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="Kb3-is-ftg" firstAttribute="leading" secondItem="KHZ-92-a7A" secondAttribute="leading" id="8BL-fV-C4e"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kb3-is-ftg" secondAttribute="trailing" id="ABa-zD-8q0"/>
                                     <constraint firstItem="Pt1-cz-TeW" firstAttribute="top" secondItem="KHZ-92-a7A" secondAttribute="top" id="Goe-37-Cau"/>
                                     <constraint firstAttribute="trailing" secondItem="Pt1-cz-TeW" secondAttribute="trailing" id="QMQ-Zr-KQ8"/>
+                                    <constraint firstItem="Kb3-is-ftg" firstAttribute="top" secondItem="Pt1-cz-TeW" secondAttribute="bottom" constant="10" id="agz-4D-DAs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kb3-is-ftg" secondAttribute="bottom" id="dex-CR-ABN"/>
                                     <constraint firstItem="Pt1-cz-TeW" firstAttribute="leading" secondItem="KHZ-92-a7A" secondAttribute="leading" id="va6-0h-Dai"/>
                                 </constraints>
                             </view>
@@ -47,6 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="Pt1-cz-TeW" id="M61-ig-Mbf"/>
+                        <outlet property="catalogItemsView" destination="Kb3-is-ftg" id="Y4i-D9-PKF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

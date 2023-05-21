@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Decoder {
+public class CustomDecoder {
     public static func decoder<T: Codable>(data: Data) throws -> T  {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase

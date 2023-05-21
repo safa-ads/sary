@@ -7,7 +7,7 @@
 
 protocol CatalogUseCaseProtocol {
     func getBanners(completion: @escaping (Result<Banner, Error>) -> Void)
-    func getSections()
+    func getSections(completion: @escaping (Result<CatalogItems, Error>) -> Void)
 }
 public class CatalogUseCase: CatalogUseCaseProtocol {
     
@@ -23,7 +23,9 @@ public class CatalogUseCase: CatalogUseCaseProtocol {
         }
     }
     
-    func getSections() {
+    func getSections(completion: @escaping (Result<CatalogItems, Error>) -> Void) {
+        repo.getSections { response in
+            completion(response)
+        }
     }
-    
 }

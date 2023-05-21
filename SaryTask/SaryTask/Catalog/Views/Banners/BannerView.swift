@@ -37,6 +37,7 @@ class BannerView: UIView, NibLoadable {
     private func configureView() {
         collectionView.register(UINib(nibName: "BannerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: BannerCollectionViewCell.self))
         collectionView.delegate = self
+        
         banners.bind(to: collectionView.rx.items(cellIdentifier: "BannerCollectionViewCell", cellType: BannerCollectionViewCell.self)) {  (row,banner,cell) in
             cell.configureView(image: banner.photo)
         }.disposed(by: disposeBag)

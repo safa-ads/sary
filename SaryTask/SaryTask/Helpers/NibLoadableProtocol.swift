@@ -1,5 +1,5 @@
 //
-//  UIView+Nib.swift
+//  NibLoadableProtocol.swift
 //  SaryTask
 //
 //  Created by Safa Mohamed Abdo El-Sayed on 21/05/2023.

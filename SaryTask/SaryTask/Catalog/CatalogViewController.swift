@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 class CatalogViewController: UIViewController {
     
+    @IBOutlet weak var catalogItemsView: CatalogItemsView!
     @IBOutlet weak var bannerView: BannerView!
     var viewModel: CatalogViewModelProtocol?
     let disposeBag = DisposeBag()
@@ -18,11 +19,14 @@ class CatalogViewController: UIViewController {
         super.viewDidLoad()
         configureViewModel()
         viewModel?.fetchBanners()
+        viewModel?.fetchSections()
     }
     
     private func configureViewModel() {
         viewModel = CatalogViewModel()
         viewModel?.banners.observe(on: MainScheduler.instance).bind(to: bannerView.banners).disposed(by: disposeBag)
+        viewModel?.sections.observe(on: MainScheduler.instance).bind(to: catalogItemsView.catalogItems).disposed(by: disposeBag)
+        
     }
 }
 
