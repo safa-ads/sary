@@ -11,6 +11,6 @@ public struct Banner: Codable {
     public let result: [BannerData]
     
     public struct BannerData:Codable {
-        public let image: String
+        public let photo: String
     }
 }

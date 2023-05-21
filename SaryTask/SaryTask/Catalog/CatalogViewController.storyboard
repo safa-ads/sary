@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Catalog View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CatalogViewController" customModule="SaryTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHZ-92-a7A">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pt1-cz-TeW" userLabel="Banner view" customClass="BannerView" customModule="SaryTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="PFQ-xw-1Gc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Pt1-cz-TeW" firstAttribute="top" secondItem="KHZ-92-a7A" secondAttribute="top" id="Goe-37-Cau"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pt1-cz-TeW" secondAttribute="trailing" id="QMQ-Zr-KQ8"/>
+                                    <constraint firstItem="Pt1-cz-TeW" firstAttribute="leading" secondItem="KHZ-92-a7A" secondAttribute="leading" id="va6-0h-Dai"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KHZ-92-a7A" secondAttribute="trailing" id="9bI-wn-n1b"/>
+                            <constraint firstItem="KHZ-92-a7A" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Stz-Ze-b2a"/>
+                            <constraint firstItem="KHZ-92-a7A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="an2-hd-ykG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KHZ-92-a7A" secondAttribute="bottom" id="ky1-3M-Bh5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="Pt1-cz-TeW" id="M61-ig-Mbf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

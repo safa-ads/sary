@@ -5,6 +5,7 @@
     use_frameworks!
     pod ‘RxSwift’
     pod ‘RxCocoa’
+    pod 'Kingfisher', '6.0'
   target 'SaryTaskTests' do
     inherit! :search_paths
     # Pods for testing

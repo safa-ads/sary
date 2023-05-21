@@ -12,7 +12,7 @@ public protocol CatalogRepoProtocol {
     func getSections()
 }
 
-class CatalogRepo: CatalogRepoProtocol {
+public class CatalogRepo: CatalogRepoProtocol {
     public var repo: BaseRepo
     public init(repo: BaseRepo = BaseRepo()) {
         self.repo = repo
@@ -35,7 +35,7 @@ class CatalogRepo: CatalogRepoProtocol {
         }
     }
     
-    func getSections() {
+    public func getSections() {
         let endpoint = CatalogEndpoints.getSections
         repo.getData(endpoint: endpoint) { result in
             

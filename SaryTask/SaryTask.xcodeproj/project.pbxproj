@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		405A03E16687C553B49FF2F5 /* Pods_SaryTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7746CBD09B30126A10962DD8 /* Pods_SaryTask.framework */; };
 		44D889D92A19630700C20336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889D82A19630700C20336 /* AppDelegate.swift */; };
-		44D889DD2A19630700C20336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889DC2A19630700C20336 /* ViewController.swift */; };
-		44D889E02A19630700C20336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D889DE2A19630700C20336 /* Main.storyboard */; };
+		44D889DD2A19630700C20336 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889DC2A19630700C20336 /* CatalogViewController.swift */; };
 		44D889E22A19630900C20336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D889E12A19630900C20336 /* Assets.xcassets */; };
 		44D889E52A19630900C20336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D889E32A19630900C20336 /* LaunchScreen.storyboard */; };
 		44D889F02A19630900C20336 /* SaryTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889EF2A19630900C20336 /* SaryTaskTests.swift */; };
@@ -25,6 +24,14 @@
 		44D88A1C2A19729700C20336 /* CatalogEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A1B2A19729700C20336 /* CatalogEndpoints.swift */; };
 		44D88A1E2A19748A00C20336 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A1D2A19748A00C20336 /* Decoder.swift */; };
 		44D88A212A19768F00C20336 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A202A19768F00C20336 /* Banner.swift */; };
+		44D88A232A197F7D00C20336 /* CatalogViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D88A222A197F7D00C20336 /* CatalogViewController.storyboard */; };
+		44D88A272A19844200C20336 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A262A19844200C20336 /* BannerView.swift */; };
+		44D88A292A19847400C20336 /* BannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D88A282A19847400C20336 /* BannerView.xib */; };
+		44D88A2B2A198A6D00C20336 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A2A2A198A6D00C20336 /* CatalogViewModel.swift */; };
+		44D88A2D2A19931300C20336 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A2C2A19931300C20336 /* BannerCollectionViewCell.swift */; };
+		44D88A2F2A19932700C20336 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D88A2E2A19932700C20336 /* BannerCollectionViewCell.xib */; };
+		44D88A322A19986D00C20336 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A312A19986D00C20336 /* UIView+Nib.swift */; };
+		44D88A352A1A31CA00C20336 /* CatalogUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D88A342A1A31CA00C20336 /* CatalogUseCase.swift */; };
 		520702F31B17DACC2306B9CC /* Pods_SaryTask_SaryTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF6D4B47922CEF4FFB37265 /* Pods_SaryTask_SaryTaskUITests.framework */; };
 		71850CCC08D923A81C680C7D /* Pods_SaryTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478E505D8F8A7427B2BDC109 /* Pods_SaryTaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,8 +59,7 @@
 		3BF6D4B47922CEF4FFB37265 /* Pods_SaryTask_SaryTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaryTask_SaryTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D889D52A19630700C20336 /* SaryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D889D82A19630700C20336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44D889DC2A19630700C20336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		44D889DF2A19630700C20336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44D889DC2A19630700C20336 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		44D889E12A19630900C20336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44D889E42A19630900C20336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44D889E62A19630900C20336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +77,14 @@
 		44D88A1B2A19729700C20336 /* CatalogEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogEndpoints.swift; sourceTree = "<group>"; };
 		44D88A1D2A19748A00C20336 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		44D88A202A19768F00C20336 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		44D88A222A197F7D00C20336 /* CatalogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CatalogViewController.storyboard; sourceTree = "<group>"; };
+		44D88A262A19844200C20336 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		44D88A282A19847400C20336 /* BannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerView.xib; sourceTree = "<group>"; };
+		44D88A2A2A198A6D00C20336 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		44D88A2C2A19931300C20336 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		44D88A2E2A19932700C20336 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		44D88A312A19986D00C20336 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		44D88A342A1A31CA00C20336 /* CatalogUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogUseCase.swift; sourceTree = "<group>"; };
 		478E505D8F8A7427B2BDC109 /* Pods_SaryTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaryTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DFF090A2D0305F47F3435D /* Pods-SaryTask-SaryTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaryTask-SaryTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-SaryTask-SaryTaskUITests/Pods-SaryTask-SaryTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7746CBD09B30126A10962DD8 /* Pods_SaryTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaryTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,7 +131,6 @@
 				2D7E32F17CFE69A6F5046D33 /* Pods-SaryTaskTests.debug.xcconfig */,
 				E02E1DC59002B90270DF8947 /* Pods-SaryTaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,9 +161,10 @@
 		44D889D72A19630700C20336 /* SaryTask */ = {
 			isa = PBXGroup;
 			children = (
+				44D88A332A1A31BC00C20336 /* UseCases */,
+				44D88A302A19985D00C20336 /* Extensions */,
+				44D88A242A19805100C20336 /* Catalog */,
 				44D889D82A19630700C20336 /* AppDelegate.swift */,
-				44D889DC2A19630700C20336 /* ViewController.swift */,
-				44D889DE2A19630700C20336 /* Main.storyboard */,
 				44D889E12A19630900C20336 /* Assets.xcassets */,
 				44D889E32A19630900C20336 /* LaunchScreen.storyboard */,
 				44D889E62A19630900C20336 /* Info.plist */,
@@ -212,6 +226,60 @@
 				44D88A202A19768F00C20336 /* Banner.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		44D88A242A19805100C20336 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				44D88A252A19843700C20336 /* Views */,
+				44D889DC2A19630700C20336 /* CatalogViewController.swift */,
+				44D88A222A197F7D00C20336 /* CatalogViewController.storyboard */,
+				44D88A2A2A198A6D00C20336 /* CatalogViewModel.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		44D88A252A19843700C20336 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44D88A372A1A3F4200C20336 /* Catalog Items */,
+				44D88A362A1A3F3200C20336 /* Banners */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44D88A302A19985D00C20336 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44D88A312A19986D00C20336 /* UIView+Nib.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44D88A332A1A31BC00C20336 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				44D88A342A1A31CA00C20336 /* CatalogUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		44D88A362A1A3F3200C20336 /* Banners */ = {
+			isa = PBXGroup;
+			children = (
+				44D88A262A19844200C20336 /* BannerView.swift */,
+				44D88A282A19847400C20336 /* BannerView.xib */,
+				44D88A2C2A19931300C20336 /* BannerCollectionViewCell.swift */,
+				44D88A2E2A19932700C20336 /* BannerCollectionViewCell.xib */,
+			);
+			path = Banners;
+			sourceTree = "<group>";
+		};
+		44D88A372A1A3F4200C20336 /* Catalog Items */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Catalog Items";
 			sourceTree = "<group>";
 		};
 		59B4903F799C50005514E3C0 /* Frameworks */ = {
@@ -333,9 +401,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D88A292A19847400C20336 /* BannerView.xib in Resources */,
+				44D88A2F2A19932700C20336 /* BannerCollectionViewCell.xib in Resources */,
 				44D889E52A19630900C20336 /* LaunchScreen.storyboard in Resources */,
 				44D889E22A19630900C20336 /* Assets.xcassets in Resources */,
-				44D889E02A19630700C20336 /* Main.storyboard in Resources */,
+				44D88A232A197F7D00C20336 /* CatalogViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,12 +535,17 @@
 			files = (
 				44D88A0C2A1968A300C20336 /* DataSourceProtocol.swift in Sources */,
 				44D88A0E2A1968F800C20336 /* RemoteDataSource.swift in Sources */,
+				44D88A2B2A198A6D00C20336 /* CatalogViewModel.swift in Sources */,
+				44D88A352A1A31CA00C20336 /* CatalogUseCase.swift in Sources */,
 				44D88A162A196F4100C20336 /* BaseRepo.swift in Sources */,
 				44D88A0A2A19684A00C20336 /* EndpointProtocol.swift in Sources */,
 				44D88A212A19768F00C20336 /* Banner.swift in Sources */,
-				44D889DD2A19630700C20336 /* ViewController.swift in Sources */,
+				44D889DD2A19630700C20336 /* CatalogViewController.swift in Sources */,
 				44D88A1C2A19729700C20336 /* CatalogEndpoints.swift in Sources */,
+				44D88A322A19986D00C20336 /* UIView+Nib.swift in Sources */,
 				44D88A192A1971F200C20336 /* CatalogRepo.swift in Sources */,
+				44D88A2D2A19931300C20336 /* BannerCollectionViewCell.swift in Sources */,
+				44D88A272A19844200C20336 /* BannerView.swift in Sources */,
 				44D889D92A19630700C20336 /* AppDelegate.swift in Sources */,
 				44D88A1E2A19748A00C20336 /* Decoder.swift in Sources */,
 				44D88A112A196AA200C20336 /* RestService.swift in Sources */,
@@ -510,14 +585,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		44D889DE2A19630700C20336 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44D889DF2A19630700C20336 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44D889E32A19630900C20336 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -656,7 +723,7 @@
 				INFOPLIST_FILE = SaryTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = CatalogViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -686,7 +753,7 @@
 				INFOPLIST_FILE = SaryTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = CatalogViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
