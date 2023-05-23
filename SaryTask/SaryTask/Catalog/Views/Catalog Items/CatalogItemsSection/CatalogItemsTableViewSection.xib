@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatalogItemsTableViewSection" customModule="SaryTask" customModuleProvider="target">
             <connections>
-                <outlet property="label" destination="1b9-T7-BFX" id="QrV-tr-BCa"/>
+                <outlet property="label" destination="pMC-Qm-phH" id="2wu-tj-6jP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="left" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="583" height="196"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1b9-T7-BFX">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMC-Qm-phH">
                     <rect key="frame" x="0.0" y="0.0" width="583" height="196"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <nil key="textColor"/>
@@ -27,10 +27,10 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="1b9-T7-BFX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vs6-dY-GKF"/>
-                <constraint firstItem="1b9-T7-BFX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="agY-Ll-pc9"/>
-                <constraint firstAttribute="trailing" secondItem="1b9-T7-BFX" secondAttribute="trailing" id="qza-gZ-CbT"/>
-                <constraint firstAttribute="bottom" secondItem="1b9-T7-BFX" secondAttribute="bottom" id="tti-wC-WDD"/>
+                <constraint firstAttribute="trailing" secondItem="pMC-Qm-phH" secondAttribute="trailing" id="Xwl-PV-CWI"/>
+                <constraint firstItem="pMC-Qm-phH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c8F-AY-UCO"/>
+                <constraint firstAttribute="bottom" secondItem="pMC-Qm-phH" secondAttribute="bottom" id="dTV-xO-fRD"/>
+                <constraint firstItem="pMC-Qm-phH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wvJ-zM-6dy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="113.74045801526717" y="-211.26760563380282"/>

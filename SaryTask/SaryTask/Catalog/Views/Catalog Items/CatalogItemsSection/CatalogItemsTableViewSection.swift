@@ -24,7 +24,7 @@ class CatalogItemsTableViewSection: UIView, NibLoadable {
         self.init(frame: .zero)
     }
     
-    private func configureView(title: String) {
+    func configureView(title: String) {
         label.text = title
     }
 }

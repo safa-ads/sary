@@ -10,18 +10,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="bgf-ws-ezp" customClass="CatalogItemTableViewCell" customModule="SaryTask" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="498" height="114"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="159" id="bgf-ws-ezp" customClass="LinearItemsTableViewCell" customModule="SaryTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="630" height="159"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bgf-ws-ezp" id="YUz-9V-k2K">
-                <rect key="frame" x="0.0" y="0.0" width="498" height="114"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bgf-ws-ezp" id="YUz-9V-k2K">
+                <rect key="frame" x="0.0" y="0.0" width="630" height="159"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Bey-tH-wMm">
-                        <rect key="frame" x="0.0" y="0.0" width="498" height="114"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Bey-tH-wMm" customClass="DynamicHeightCollectionView" customModule="SaryTask" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="630" height="130"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="17w-nq-wcu">
-                            <size key="itemSize" width="128" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="WbE-Vs-WfH"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="24" id="17w-nq-wcu">
+                            <size key="itemSize" width="111" height="145"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -38,7 +41,7 @@
             <connections>
                 <outlet property="collectionView" destination="Bey-tH-wMm" id="PWb-rZ-eUI"/>
             </connections>
-            <point key="canvasLocation" x="-70.229007633587784" y="76.056338028169023"/>
+            <point key="canvasLocation" x="30.534351145038165" y="90.492957746478879"/>
         </tableViewCell>
     </objects>
     <resources>

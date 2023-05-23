@@ -28,7 +28,5 @@ public extension NibLoadable where Self: UIView {
         view.frame = bounds
 
         self.addSubview(view)
-        
-        self.translatesAutoresizingMaskIntoConstraints = false
     }
 }

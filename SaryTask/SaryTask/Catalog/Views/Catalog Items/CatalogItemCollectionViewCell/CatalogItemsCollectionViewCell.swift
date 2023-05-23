@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import Kingfisher
 
 class CatalogItemsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
+    let disposeBag = DisposeBag()
     override func layoutSubviews() {
         super.layoutSubviews()
         imageView.layer.masksToBounds = true
