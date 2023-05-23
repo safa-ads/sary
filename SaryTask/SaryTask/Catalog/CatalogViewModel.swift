@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 protocol CatalogViewModelProtocol {
     func fetchBanners()
@@ -31,7 +32,8 @@ class CatalogViewModel: CatalogViewModelProtocol {
         useCase.getBanners { [weak self] result in
             switch result {
             case .success(let value):
-                self?.banners.onNext(value.result)
+                self?.banners.onNext([.init(photo: "https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/2020_belgian-style-waffles_16700_760x580.jpg?ext=.jpg"),
+                                      .init(photo: "https://media.istockphoto.com/id/185266029/photo/waffles-with-fruit-and-maple-syrup-on-a-marble-counter.jpg?s=612x612&w=0&k=20&c=YkBBzuSLisdHiECgS_NHN6gOyOMN6exADFk-RIlfKtI=")])
             case .failure(let error):
                 print(error)
             }
@@ -49,6 +51,5 @@ class CatalogViewModel: CatalogViewModelProtocol {
             }
         }
     }
-    
-    
 }
+

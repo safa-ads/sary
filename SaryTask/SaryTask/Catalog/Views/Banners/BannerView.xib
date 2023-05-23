@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerView" customModule="SaryTask" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="XGY-fO-MoV" id="Ej7-Q8-DD1"/>
+                <outlet property="pageControl" destination="UNL-oQ-VxP" id="VCw-w6-pCS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XGY-fO-MoV">
-                    <rect key="frame" x="16" y="16" width="656" height="455"/>
+                    <rect key="frame" x="16" y="16" width="656" height="477"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ad9-Pe-RRM">
                         <size key="itemSize" width="300" height="300"/>
@@ -28,19 +29,23 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="Thc-4u-28x">
-                    <rect key="frame" x="268.33333333333331" y="487" width="151.66666666666669" height="26"/>
-                    <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
-                </pageControl>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNL-oQ-VxP" customClass="CustomPageControlView" customModule="SaryTask" customModuleProvider="target">
+                    <rect key="frame" x="224" y="509" width="240" height="4"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="K7j-of-tfr"/>
+                        <constraint firstAttribute="width" constant="240" placeholder="YES" id="LC0-ME-dy2"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Thc-4u-28x" firstAttribute="top" secondItem="XGY-fO-MoV" secondAttribute="bottom" constant="16" id="CD7-Pm-K8p"/>
                 <constraint firstItem="XGY-fO-MoV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Fn4-ZQ-xV8"/>
-                <constraint firstAttribute="bottom" secondItem="Thc-4u-28x" secondAttribute="bottom" id="JVl-CZ-XK4"/>
+                <constraint firstItem="UNL-oQ-VxP" firstAttribute="top" secondItem="XGY-fO-MoV" secondAttribute="bottom" constant="16" id="Y1X-fT-KPl"/>
                 <constraint firstItem="XGY-fO-MoV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="auQ-hJ-1W3"/>
                 <constraint firstAttribute="trailing" secondItem="XGY-fO-MoV" secondAttribute="trailing" constant="16" id="dEb-wb-DCh"/>
-                <constraint firstItem="Thc-4u-28x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jUX-NB-Uhr"/>
+                <constraint firstItem="UNL-oQ-VxP" firstAttribute="centerX" secondItem="XGY-fO-MoV" secondAttribute="centerX" id="f4T-3K-t5e"/>
+                <constraint firstAttribute="bottom" secondItem="UNL-oQ-VxP" secondAttribute="bottom" id="oV3-9F-pJ7"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="112.97709923664122" y="-305.98591549295776"/>
@@ -49,9 +54,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

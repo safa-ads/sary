@@ -19,6 +19,7 @@ class BannerCollectionViewCell: UICollectionViewCell {
     
     func configureView(image: String) {
         let url = URL(string: image)
+        imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: url)
     }
 }
