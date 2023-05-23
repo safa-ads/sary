@@ -36,7 +36,7 @@ class LinearItemsTableViewCell: UITableViewCell, UICollectionViewDelegate {
         let cellHeight: CGFloat = 124
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 4
+        layout.minimumInteritemSpacing = 24
         layout.sectionInset = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 4)
         layout.itemSize = CGSize(width: cellWidth,
                                  height: cellHeight)

@@ -17,26 +17,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="429" height="92"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Fse-u4-hEw" customClass="DynamicHeightCollectionView" customModule="SaryTask" customModuleProvider="target">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YgY-DH-ore" customClass="DynamicHeightCollectionView" customModule="SaryTask" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="429" height="92"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UmP-y2-HTc">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="p0y-10-vDV">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="Fse-u4-hEw" secondAttribute="bottom" id="Snb-G3-6nA"/>
-                    <constraint firstItem="Fse-u4-hEw" firstAttribute="leading" secondItem="WLc-zP-BYg" secondAttribute="leading" id="TXh-Vq-QAd"/>
-                    <constraint firstAttribute="trailing" secondItem="Fse-u4-hEw" secondAttribute="trailing" id="hrs-0u-tQF"/>
-                    <constraint firstItem="Fse-u4-hEw" firstAttribute="top" secondItem="WLc-zP-BYg" secondAttribute="top" id="xJt-Dm-nRR"/>
+                    <constraint firstItem="YgY-DH-ore" firstAttribute="top" secondItem="WLc-zP-BYg" secondAttribute="top" id="6Pz-dE-uzq"/>
+                    <constraint firstItem="YgY-DH-ore" firstAttribute="leading" secondItem="WLc-zP-BYg" secondAttribute="leading" id="7fZ-aD-R7c"/>
+                    <constraint firstAttribute="trailing" secondItem="YgY-DH-ore" secondAttribute="trailing" id="iZM-Mg-TUf"/>
+                    <constraint firstAttribute="bottom" secondItem="YgY-DH-ore" secondAttribute="bottom" id="ldy-HN-vsJ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="collectionView" destination="Fse-u4-hEw" id="vkq-xQ-A7L"/>
+                <outlet property="collectionView" destination="YgY-DH-ore" id="gYs-Pe-Xj6"/>
             </connections>
             <point key="canvasLocation" x="-252.67175572519082" y="16.901408450704228"/>
         </tableViewCell>
