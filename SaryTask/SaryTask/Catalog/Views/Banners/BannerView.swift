@@ -12,9 +12,11 @@ import RxCocoa
 protocol BannerViewDelegate: AnyObject {
     func didTapOnBanner(image: String)
 }
+
 class BannerView: UIView, NibLoadable {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: CustomPageControlView!
+    
     var banners = PublishSubject<[Banner.BannerData]>()
     let disposeBag = DisposeBag()
     weak var delegate: BannerViewDelegate?
@@ -22,6 +24,7 @@ class BannerView: UIView, NibLoadable {
     override func awakeFromNib() {
         super.awakeFromNib()
         configureView()
+        setupBindings()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -42,9 +45,9 @@ class BannerView: UIView, NibLoadable {
     private func configureView() {
         collectionView.register(UINib(nibName: "BannerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: BannerCollectionViewCell.self))
         collectionView.delegate = self
-        
-
-        
+    }
+    
+    private func setupBindings() {
         Observable.zip(collectionView.rx.itemSelected, collectionView.rx.modelSelected(Banner.BannerData.self))
             .bind { [weak self] indexPath, model in
                 self?.delegate?.didTapOnBanner(image: model.photo)

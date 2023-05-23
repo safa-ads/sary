@@ -11,17 +11,15 @@ import RxCocoa
 
 class CatalogItemsView: UIView, NibLoadable {
     @IBOutlet weak var tableView: UITableView!
+    
     var catalogItems = PublishSubject<[CatalogItems.Items]>()
     private var items: [CatalogItems.Items]?
-    
     let disposeBag = DisposeBag()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         configureView()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight =  UITableView.automaticDimension
+        setupBindings()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -41,6 +39,12 @@ class CatalogItemsView: UIView, NibLoadable {
         
         tableView.register(UINib(nibName: "GirdItemsTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GirdItemsTableViewCell.self))
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight =  UITableView.automaticDimension
+    }
+    
+    private func setupBindings() {
         catalogItems.subscribe {[weak self] items in
             self?.items = items.element
             self?.tableView.reloadData()

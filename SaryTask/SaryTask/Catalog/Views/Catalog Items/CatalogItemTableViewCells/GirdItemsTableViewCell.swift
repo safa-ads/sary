@@ -11,6 +11,7 @@ import RxCocoa
 
 class GirdItemsTableViewCell: UITableViewCell, UICollectionViewDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var catalogItems = PublishSubject<[CatalogItems.CatalogData]>()
     private let disposeBag = DisposeBag()
     private var numberOfRows: Int = 0
