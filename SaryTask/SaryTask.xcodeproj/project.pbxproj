@@ -15,6 +15,7 @@
 		44339F892A1CD31900695115 /* CustomPageControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44339F882A1CD31800695115 /* CustomPageControlView.xib */; };
 		44339F8B2A1CD32500695115 /* RectangularView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44339F8A2A1CD32500695115 /* RectangularView.xib */; };
 		44339F8D2A1CD33200695115 /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F8C2A1CD33200695115 /* RectangularView.swift */; };
+		44339F8F2A1CE7D600695115 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F8E2A1CE7D600695115 /* UIViewController+Toast.swift */; };
 		44D889D92A19630700C20336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889D82A19630700C20336 /* AppDelegate.swift */; };
 		44D889DD2A19630700C20336 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889DC2A19630700C20336 /* CatalogViewController.swift */; };
 		44D889E22A19630900C20336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D889E12A19630900C20336 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		44339F882A1CD31800695115 /* CustomPageControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPageControlView.xib; sourceTree = "<group>"; };
 		44339F8A2A1CD32500695115 /* RectangularView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RectangularView.xib; sourceTree = "<group>"; };
 		44339F8C2A1CD33200695115 /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
+		44339F8E2A1CE7D600695115 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		44D889D52A19630700C20336 /* SaryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D889D82A19630700C20336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D889DC2A19630700C20336 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 			children = (
 				44D88A312A19986D00C20336 /* NibLoadableProtocol.swift */,
 				44339F7F2A1BA62500695115 /* DynamicHeightCollectionView.swift */,
+				44339F8E2A1CE7D600695115 /* UIViewController+Toast.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -634,6 +637,7 @@
 				44339F822A1BA66300695115 /* GirdItemsTableViewCell.swift in Sources */,
 				44D88A2B2A198A6D00C20336 /* CatalogViewModel.swift in Sources */,
 				44DBB3752A1A5B710034784D /* CatalogItemsCollectionViewCell.swift in Sources */,
+				44339F8F2A1CE7D600695115 /* UIViewController+Toast.swift in Sources */,
 				44D88A352A1A31CA00C20336 /* CatalogUseCase.swift in Sources */,
 				44D88A162A196F4100C20336 /* BaseRepo.swift in Sources */,
 				44D88A392A1A3F8600C20336 /* CatalogItems.swift in Sources */,
