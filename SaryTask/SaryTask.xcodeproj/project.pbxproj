@@ -20,6 +20,7 @@
 		44339F932A1CF3B800695115 /* RemoteDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F922A1CF3B800695115 /* RemoteDataSourceMock.swift */; };
 		44339F972A1D07D900695115 /* Catalog+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F962A1D07D900695115 /* Catalog+Stubs.swift */; };
 		44339F9A2A1D082300695115 /* CatalogUseCaseUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F992A1D082300695115 /* CatalogUseCaseUnitTests.swift */; };
+		44339F9D2A1D0DCD00695115 /* CatalogViewModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F9C2A1D0DCD00695115 /* CatalogViewModelUnitTests.swift */; };
 		44D889D92A19630700C20336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889D82A19630700C20336 /* AppDelegate.swift */; };
 		44D889DD2A19630700C20336 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889DC2A19630700C20336 /* CatalogViewController.swift */; };
 		44D889E22A19630900C20336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D889E12A19630900C20336 /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		44339F922A1CF3B800695115 /* RemoteDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceMock.swift; sourceTree = "<group>"; };
 		44339F962A1D07D900695115 /* Catalog+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalog+Stubs.swift"; sourceTree = "<group>"; };
 		44339F992A1D082300695115 /* CatalogUseCaseUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogUseCaseUnitTests.swift; sourceTree = "<group>"; };
+		44339F9C2A1D0DCD00695115 /* CatalogViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModelUnitTests.swift; sourceTree = "<group>"; };
 		44D889D52A19630700C20336 /* SaryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D889D82A19630700C20336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D889DC2A19630700C20336 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
@@ -212,11 +214,30 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		44339F9B2A1D0BF200695115 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				44D88A2C2A19931300C20336 /* BannerCollectionViewCell.swift */,
+				44D88A2E2A19932700C20336 /* BannerCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		44339F9E2A1D0E1B00695115 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				44339F9C2A1D0DCD00695115 /* CatalogViewModelUnitTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		44D889CC2A19630700C20336 = {
 			isa = PBXGroup;
 			children = (
 				44D889D72A19630700C20336 /* SaryTask */,
+				44D88A1A2A19728300C20336 /* APIs */,
 				44D88A1F2A19761600C20336 /* Models */,
+				44D88A082A19682100C20336 /* CoreNetworking */,
 				44D88A332A1A31BC00C20336 /* UseCases */,
 				44D88A142A196E3800C20336 /* Repo */,
 				44D889EE2A19630900C20336 /* SaryTaskTests */,
@@ -246,8 +267,6 @@
 				44D889E12A19630900C20336 /* Assets.xcassets */,
 				44D889E32A19630900C20336 /* LaunchScreen.storyboard */,
 				44D889E62A19630900C20336 /* Info.plist */,
-				44D88A1A2A19728300C20336 /* APIs */,
-				44D88A082A19682100C20336 /* CoreNetworking */,
 			);
 			path = SaryTask;
 			sourceTree = "<group>";
@@ -256,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				44339F952A1D07CB00695115 /* Stubs */,
+				44339F9E2A1D0E1B00695115 /* ViewModel */,
 				44339F982A1D07FA00695115 /* UseCase */,
 				44339F942A1CF3CB00695115 /* Repo */,
 				44D889EF2A19630900C20336 /* SaryTaskTests.swift */,
@@ -275,7 +295,6 @@
 		44D88A082A19682100C20336 /* CoreNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				44D88A092A19684A00C20336 /* EndpointProtocol.swift */,
 				44D88A102A196AA200C20336 /* RestService.swift */,
 				44D88A1D2A19748A00C20336 /* Decoder.swift */,
 			);
@@ -296,6 +315,7 @@
 		44D88A1A2A19728300C20336 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				44D88A092A19684A00C20336 /* EndpointProtocol.swift */,
 				44D88A1B2A19729700C20336 /* CatalogEndpoints.swift */,
 			);
 			path = APIs;
@@ -351,11 +371,10 @@
 		44D88A362A1A3F3200C20336 /* Banners */ = {
 			isa = PBXGroup;
 			children = (
+				44339F9B2A1D0BF200695115 /* CollectionViewCell */,
 				44339F852A1CD2F700695115 /* Custom Page Control */,
 				44D88A262A19844200C20336 /* BannerView.swift */,
 				44D88A282A19847400C20336 /* BannerView.xib */,
-				44D88A2C2A19931300C20336 /* BannerCollectionViewCell.swift */,
-				44D88A2E2A19932700C20336 /* BannerCollectionViewCell.xib */,
 			);
 			path = Banners;
 			sourceTree = "<group>";
@@ -704,6 +723,7 @@
 				44339F972A1D07D900695115 /* Catalog+Stubs.swift in Sources */,
 				44339F9A2A1D082300695115 /* CatalogUseCaseUnitTests.swift in Sources */,
 				44D889F02A19630900C20336 /* SaryTaskTests.swift in Sources */,
+				44339F9D2A1D0DCD00695115 /* CatalogViewModelUnitTests.swift in Sources */,
 				44339F912A1CF39900695115 /* CatalogRepoBannerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

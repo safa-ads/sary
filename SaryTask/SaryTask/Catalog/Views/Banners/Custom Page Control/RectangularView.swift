@@ -8,9 +8,6 @@
 import UIKit
 
 class RectangularView: UIView, NibLoadable {
-   
-    @IBOutlet weak var subView: UIView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layer.masksToBounds = true

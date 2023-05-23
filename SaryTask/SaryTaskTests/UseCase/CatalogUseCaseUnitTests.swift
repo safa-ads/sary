@@ -75,6 +75,4 @@ class CatalogRepoMock: CatalogRepoProtocol {
     func getSections(completion: @escaping (Result<CatalogItems, Error>) -> Void) {
         completion(.success(CatalogItems.stub()))
     }
-    
-   
 }
