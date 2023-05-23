@@ -18,6 +18,8 @@
 		44339F8F2A1CE7D600695115 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F8E2A1CE7D600695115 /* UIViewController+Toast.swift */; };
 		44339F912A1CF39900695115 /* CatalogRepoBannerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F902A1CF39900695115 /* CatalogRepoBannerUnitTests.swift */; };
 		44339F932A1CF3B800695115 /* RemoteDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F922A1CF3B800695115 /* RemoteDataSourceMock.swift */; };
+		44339F972A1D07D900695115 /* Catalog+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F962A1D07D900695115 /* Catalog+Stubs.swift */; };
+		44339F9A2A1D082300695115 /* CatalogUseCaseUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F992A1D082300695115 /* CatalogUseCaseUnitTests.swift */; };
 		44D889D92A19630700C20336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889D82A19630700C20336 /* AppDelegate.swift */; };
 		44D889DD2A19630700C20336 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889DC2A19630700C20336 /* CatalogViewController.swift */; };
 		44D889E22A19630900C20336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D889E12A19630900C20336 /* Assets.xcassets */; };
@@ -86,6 +88,8 @@
 		44339F8E2A1CE7D600695115 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		44339F902A1CF39900695115 /* CatalogRepoBannerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepoBannerUnitTests.swift; sourceTree = "<group>"; };
 		44339F922A1CF3B800695115 /* RemoteDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceMock.swift; sourceTree = "<group>"; };
+		44339F962A1D07D900695115 /* Catalog+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalog+Stubs.swift"; sourceTree = "<group>"; };
+		44339F992A1D082300695115 /* CatalogUseCaseUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogUseCaseUnitTests.swift; sourceTree = "<group>"; };
 		44D889D52A19630700C20336 /* SaryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D889D82A19630700C20336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D889DC2A19630700C20336 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,22 @@
 			path = Repo;
 			sourceTree = "<group>";
 		};
+		44339F952A1D07CB00695115 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				44339F962A1D07D900695115 /* Catalog+Stubs.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		44339F982A1D07FA00695115 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				44339F992A1D082300695115 /* CatalogUseCaseUnitTests.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		44D889CC2A19630700C20336 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +255,8 @@
 		44D889EE2A19630900C20336 /* SaryTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				44339F952A1D07CB00695115 /* Stubs */,
+				44339F982A1D07FA00695115 /* UseCase */,
 				44339F942A1CF3CB00695115 /* Repo */,
 				44D889EF2A19630900C20336 /* SaryTaskTests.swift */,
 			);
@@ -679,6 +701,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44339F932A1CF3B800695115 /* RemoteDataSourceMock.swift in Sources */,
+				44339F972A1D07D900695115 /* Catalog+Stubs.swift in Sources */,
+				44339F9A2A1D082300695115 /* CatalogUseCaseUnitTests.swift in Sources */,
 				44D889F02A19630900C20336 /* SaryTaskTests.swift in Sources */,
 				44339F912A1CF39900695115 /* CatalogRepoBannerUnitTests.swift in Sources */,
 			);

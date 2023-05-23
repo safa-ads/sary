@@ -11,13 +11,12 @@ import XCTest
 final class CatalogRepoUnitTests: XCTestCase {
     private var sut: CatalogRepo!
 
-    //MARK: - Life Sycle
+    //MARK: - Life Cycle
     override func tearDown() {
         super.tearDown()
         sut = nil
     }
 
-    //MARK: - Get Tags Tests
     func testCatalogRepo_GetBanners_OnSuccess() {
         // Given
         let mockedResponse = Banner.stub()
@@ -38,7 +37,6 @@ final class CatalogRepoUnitTests: XCTestCase {
     }
 
 
-    //MARK: - Get Tags Tests
     func testCatalogRepo_GetSections_OnSuccess() {
         // Given
         let mockedResponse = CatalogItems.stub()
@@ -59,22 +57,5 @@ final class CatalogRepoUnitTests: XCTestCase {
         XCTAssertEqual(tempResponse?.result.first?.showTitle, mockedResponse.result.first?.showTitle)
         XCTAssertEqual(tempResponse?.result.first?.title, mockedResponse.result.first?.title)
         XCTAssertEqual(remoteDataSource.counter, 1)
-    }
-}
-
-extension Banner {
-    static func stub() -> Self {
-        .init(result: [.init(photo: "https://photo.png")])
-    }
-}
-
-extension CatalogItems {
-    static func stub() -> Self {
-        .init(result: [.init(showTitle: false,
-                             title: "title",
-                             rowCount: 1,
-                             uiType: .grid,
-                             dataType: .banner,
-                             data: [.init(image: "https://photo.png")])])
     }
 }

@@ -17,10 +17,8 @@ protocol CatalogViewModelProtocol {
 }
 
 class CatalogViewModel: CatalogViewModelProtocol {
-    
-    
-    public let banners: PublishSubject<[Banner.BannerData]> = PublishSubject()
-    public let sections: PublishSubject<[CatalogItems.Items]> = PublishSubject()
+    let banners: PublishSubject<[Banner.BannerData]> = PublishSubject()
+    let sections: PublishSubject<[CatalogItems.Items]> = PublishSubject()
     var useCase: CatalogUseCaseProtocol
     
     public init(useCase: CatalogUseCaseProtocol = CatalogUseCase()) {
