@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol DataSourceProtocol {
-    func getData(endpoint: EndpointProtocol, completion:  @escaping (Result<Data, Error>) -> Void)
+    func getData<T: Codable>(endpoint: EndpointProtocol, completion:  @escaping (Result<T, Error>) -> Void)
 }

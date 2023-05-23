@@ -16,6 +16,8 @@
 		44339F8B2A1CD32500695115 /* RectangularView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44339F8A2A1CD32500695115 /* RectangularView.xib */; };
 		44339F8D2A1CD33200695115 /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F8C2A1CD33200695115 /* RectangularView.swift */; };
 		44339F8F2A1CE7D600695115 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F8E2A1CE7D600695115 /* UIViewController+Toast.swift */; };
+		44339F912A1CF39900695115 /* CatalogRepoBannerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F902A1CF39900695115 /* CatalogRepoBannerUnitTests.swift */; };
+		44339F932A1CF3B800695115 /* RemoteDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339F922A1CF3B800695115 /* RemoteDataSourceMock.swift */; };
 		44D889D92A19630700C20336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889D82A19630700C20336 /* AppDelegate.swift */; };
 		44D889DD2A19630700C20336 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D889DC2A19630700C20336 /* CatalogViewController.swift */; };
 		44D889E22A19630900C20336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D889E12A19630900C20336 /* Assets.xcassets */; };
@@ -82,6 +84,8 @@
 		44339F8A2A1CD32500695115 /* RectangularView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RectangularView.xib; sourceTree = "<group>"; };
 		44339F8C2A1CD33200695115 /* RectangularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		44339F8E2A1CE7D600695115 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
+		44339F902A1CF39900695115 /* CatalogRepoBannerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepoBannerUnitTests.swift; sourceTree = "<group>"; };
+		44339F922A1CF3B800695115 /* RemoteDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceMock.swift; sourceTree = "<group>"; };
 		44D889D52A19630700C20336 /* SaryTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaryTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D889D82A19630700C20336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D889DC2A19630700C20336 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,15 @@
 			path = "Custom Page Control";
 			sourceTree = "<group>";
 		};
+		44339F942A1CF3CB00695115 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				44339F902A1CF39900695115 /* CatalogRepoBannerUnitTests.swift */,
+				44339F922A1CF3B800695115 /* RemoteDataSourceMock.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
 		44D889CC2A19630700C20336 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +235,7 @@
 		44D889EE2A19630900C20336 /* SaryTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				44339F942A1CF3CB00695115 /* Repo */,
 				44D889EF2A19630900C20336 /* SaryTaskTests.swift */,
 			);
 			path = SaryTaskTests;
@@ -664,7 +678,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44339F932A1CF3B800695115 /* RemoteDataSourceMock.swift in Sources */,
 				44D889F02A19630900C20336 /* SaryTaskTests.swift in Sources */,
+				44339F912A1CF39900695115 /* CatalogRepoBannerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
